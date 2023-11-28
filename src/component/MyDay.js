@@ -5,6 +5,7 @@ import { BiSortAlt2 } from "react-icons/bi";
 import { HiOutlineFolderMinus } from "react-icons/hi2";
 import { BsLightbulb } from "react-icons/bs";
 import AddNewToDo from './AddNewToDo';
+import TodoList from './TodoList';
 
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -27,13 +28,14 @@ const MyDay = () => {
           {weekDay}, {month} {day}
         </div>
       </div>
-      <div className='flex items-center gap-3 text-xl text-gray-500'>
-        <div className='flex items-center'><BiSortAlt2 /> Sort</div>
-        <div className='flex items-center'><HiOutlineFolderMinus /> Group</div>
-        <div className='flex items-center'><BsLightbulb /> Suggestions</div>
+      <div className='flex items-center gap-3 text-sm text-gray-500'>
+        <div className='flex items-center gap-1'><BiSortAlt2 /> Sort</div>
+        <div className='flex items-center gap-1'><HiOutlineFolderMinus /> Group</div>
+        <div className='flex items-center gap-1'><BsLightbulb /> Suggestions</div>
       </div>      
     </div>
     <AddNewToDo />
+    <TodoList />
     </>
   )
 }

@@ -3,7 +3,6 @@ import { BiSolidGrid } from "react-icons/bi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { RiQuestionMark } from "react-icons/ri";
 import { TbBellRinging2 } from "react-icons/tb";
-import { VscSearch } from "react-icons/vsc";
 
 const Header = () => {
     return (
@@ -11,7 +10,7 @@ const Header = () => {
             <div className='flex justify-between p-4 text-white bg-blue-600'>
                 <div className='flex items-center gap-1'><BiSolidGrid className='mr-4 text-3xl' />TO DO</div>
                 <div>
-                    <input type='text' placeholder='Search' className='p-1 rounded px-14' />
+                    <input type='text' placeholder='Search' className='p-1 rounded input px-14' />
                 </div>
                 <div className='flex items-center gap-1'>
                     <IoSettingsOutline />

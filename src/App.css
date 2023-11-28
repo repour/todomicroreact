@@ -1,5 +1,8 @@
+
 .App {
   text-align: center;
+  min-height: 100vh;
+
 }
 
 .App-logo {
@@ -27,6 +30,15 @@
 .App-link {
   color: #61dafb;
 }
+.menu{
+  position: relative;
+  left: 24px;
+  top: 27.5px;
+}
+.btn-icon:hover{
+  cursor: pointer;
+  opacity: 60%;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +48,4 @@
     transform: rotate(360deg);
   }
 }
+

@@ -1,23 +1,43 @@
 {
-    "alltodo": [
-        {
-          "id": 1,
-          "todo": "Drink water",
-          "compelete": false
-        },
-        {
-            "id": 2,
-            "todo": "Call dad",
-            "compelete": true
-          }
-      ],
-      "important": [
-        {
-            "id": 1,
-            "todo": "Call dad",
-            "compelete": true
-          }
-      ]
-
-
+  "alltodo": [
+    {
+      "todo": "Drink water",
+      "compelete": false,
+      "editMode": false,
+      "important": false,
+      "id": 1
+    },
+    {
+      "todo": "Call dad",
+      "compelete": false,
+      "editMode": false,
+      "important": false,
+      "id": 2
+    },
+    {
+      "todo": "Read a book",
+      "compelete": false,
+      "editMode": false,
+      "important": true,
+      "id": 3
+    },
+    {
+      "todo": "xasjdkashdas",
+      "compelete": true,
+      "important": true,
+      "id": 4
+    },
+    {
+      "todo": "exercise js",
+      "compelete": true,
+      "id": 5,
+      "important": true
+    },
+    {
+      "todo": "build some react website",
+      "compelete": false,
+      "id": 6,
+      "important": true
+    }
+  ]
 }
