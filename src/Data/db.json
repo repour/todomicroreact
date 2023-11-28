@@ -2,7 +2,7 @@
   "alltodo": [
     {
       "todo": "Drink water",
-      "compelete": false,
+      "compelete": true,
       "editMode": false,
       "important": false,
       "id": 1
