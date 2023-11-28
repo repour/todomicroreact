@@ -4,7 +4,7 @@ const IconInput = ({ icon: IconComponent, ...props }) => {
   return (
     <div style={{ position: 'relative' }}>
       <input
-      className='p-1 text-gray-900 rounded px-9'
+      className='p-1 text-gray-900 rounded input pr-36 px-9'
         type="text"
         placeholder='Search...'
         {...props}

@@ -10,7 +10,7 @@ const Header = () => {
     const [searchInput, setSearchInput] = useState('')
     return (
         <>
-            <div className='flex justify-between p-4 text-white bg-blue-600'>
+            <div className='flex justify-between p-2 text-white bg-blue-600'>
                 <div className='flex items-center gap-1'><BiSolidGrid className='mr-4 text-3xl' />TO DO</div>
                 <div>
                     <IconInput value={searchInput} onChange={(e)=>setSearchInput(e.target.value)} icon={VscSearch} />
