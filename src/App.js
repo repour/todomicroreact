@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import MyDay from './component/MyDay';
+import Important from './component/Important';
+import SideMenu from './component/SideMenu';
+import Header from './component/Header';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* <Provider > */}
+      <div className="App">
+        <BrowserRouter>
+          <Header />
+          <div className='flex'>          
+            <SideMenu />
+            <div className='flex-grow bg-gray-100'>
+            <Routes>
+              <Route path='/' element={<MyDay></MyDay>}></Route>
+              <Route path='/important' element={<Important></Important>}></Route>
+            </Routes>
+            </div>
+            </div>
+        </BrowserRouter>
+        <ToastContainer className="toast-position"
+          position="bottom-right"></ToastContainer>
+      </div>
+      {/* </Provider> */}
+
     </div>
   );
 }

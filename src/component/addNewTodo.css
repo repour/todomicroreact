@@ -1,0 +1,12 @@
+.input:focus {
+    outline: none;
+    border: none;
+}
+
+.input::placeholder {
+    color: #2564cf;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}

@@ -1,0 +1,23 @@
+{
+    "alltodo": [
+        {
+          "id": 1,
+          "todo": "Drink water",
+          "compelete": false
+        },
+        {
+            "id": 2,
+            "todo": "Call dad",
+            "compelete": true
+          }
+      ],
+      "important": [
+        {
+            "id": 1,
+            "todo": "Call dad",
+            "compelete": true
+          }
+      ]
+
+
+}
