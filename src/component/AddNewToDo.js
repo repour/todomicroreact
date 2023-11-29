@@ -13,7 +13,7 @@ const AddNewToDo = (props) => {
     const dispatch=useDispatch();
 
     const handlesubmit = (e) => {
-        const todoobj = { todo, compelete:false};
+        const todoobj = { todo, compelete:false, important:false};
         dispatch(FunctionAddTodo(todoobj));
         setTodo('')
         props.loadTodo();
