@@ -24,7 +24,7 @@ const Important = (props) => {
 
   return (
     <>
-      <div className='flex items-start justify-between flex-grow h-20 p-6'>
+      <div className='flex items-center justify-between flex-grow p-2 px-4 md:items-start h-fit md:h-20 md:p-6'>
         <div>
           <div className='flex items-center gap-3 text-2xl text-blue-600'>
             <CiStar /> Important <RiMoreLine />

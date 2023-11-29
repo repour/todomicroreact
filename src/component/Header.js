@@ -11,8 +11,8 @@ const Header = () => {
     return (
         <>
             <div className='flex justify-between p-2 text-white bg-blue-600'>
-                <div className='flex items-center gap-1'><BiSolidGrid className='mr-4 text-3xl' />TO DO</div>
-                <div>
+                <div className='flex items-center gap-1 text-sm md:text-lg'><BiSolidGrid className='text-xl md:mr-4 md:text-3xl' />TO DO</div>
+                <div className=''>
                     <IconInput value={searchInput} onChange={(e)=>setSearchInput(e.target.value)} icon={VscSearch} />
                 </div>
                 <div className='flex items-center gap-1'>

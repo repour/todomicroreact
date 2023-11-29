@@ -23,8 +23,8 @@ const SideMenu = (props) => {
             {
                 burgerMenuFlag
                     ?
-                    <div className="w-1/5 h-screen pt-8 bg-white border-r-2 text-black-600">
-                        <h1 className="p-4 mb-4 text-2xl font-bold" onClick={() => handleClick()}><RxHamburgerMenu /></h1>
+                    <div className="w-full pt-1 bg-white border-r-2 md:pt-8 h-fit md:h-screen md:w-1/5 text-black-600">
+                        <h1 className="p-1 px-4 text-lg font-bold md:p-4 md:mb-4 md:text-2xl" onClick={() => handleClick()}><RxHamburgerMenu /></h1>
                         <Link className={`flex items-center p-4 w-full gap-4 pb-2 text-center btn-icon ${activeLink === 0 ? 'bg-blue-100' : ''}`} to={'/'}onClick={() => handleLinkClick(0)}>
                             <GoSun />
                             <p className='flex-grow text-left'>My Day</p>
@@ -37,7 +37,7 @@ const SideMenu = (props) => {
                         </Link>
                     </div>
                     :
-                    <h1 className="mb-4 text-2xl font-bold menu" onClick={() => handleClick()}><RxHamburgerMenu /></h1>
+                    <h1 className="p-2 px-4 text-lg font-bold md:mb-4 md:text-2xl menu" onClick={() => handleClick()}><RxHamburgerMenu /></h1>
             }
         </>
     )

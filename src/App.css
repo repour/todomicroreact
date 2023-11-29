@@ -30,16 +30,17 @@
 .App-link {
   color: #61dafb;
 }
-.menu{
-  position: relative;
-  left: 24px;
-  top: 27.5px;
-}
 .btn-icon:hover{
   cursor: pointer;
   opacity: 60%;
 }
-
+@media screen and (min-width: 480px) {
+  .menu{
+    position: relative;
+    left: 24px;
+    top: 27.5px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

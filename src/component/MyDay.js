@@ -19,16 +19,16 @@ const MyDay = () => {
 
   return (
     <>
-    <div className='flex items-start justify-between flex-grow h-20 p-6'>
-      <div>
-        <div className='flex items-center gap-3 text-2xl'>
+    <div className='flex justify-between flex-grow p-2 px-4 h-fit md:h-20 item-center md:items-start md:p-6'>
+      <div className='my-auto'>
+        <div className='flex items-center gap-3 text-lg md:text-2xl'>
         <GoSun className=''/> My Day <RiMoreLine className='text-gray-500' />
         </div>
-        <div className='text-sm text-gray-500'>
+        <div className='text-xs text-gray-500 md:text-sm'>
           {weekDay}, {month} {day}
         </div>
       </div>
-      <div className='flex items-center gap-3 text-sm text-gray-500'>
+      <div className='flex items-center gap-3 text-xs text-gray-500 md:text-sm'>
         <div className='flex items-center gap-1'><BiSortAlt2 /> Sort</div>
         <div className='flex items-center gap-1'><HiOutlineFolderMinus /> Group</div>
         <div className='flex items-center gap-1'><BsLightbulb /> Suggestions</div>

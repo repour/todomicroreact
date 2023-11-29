@@ -16,7 +16,7 @@ function App() {
       <div className="bg-gray-100 App">
         <BrowserRouter>
           <Header />
-          <div className='flex'>          
+          <div className='block md:flex'>          
             <SideMenu />
             <div className='flex-grow bg-gray-100'>
             <Routes>
